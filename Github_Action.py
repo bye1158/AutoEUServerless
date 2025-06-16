@@ -26,7 +26,7 @@ TRUECAPTCHA_APIKEY = os.getenv('TRUECAPTCHA_APIKEY')
 
 # Mailparser 配置
 MAILPARSER_DOWNLOAD_URL_ID = os.getenv('MAILPARSER_DOWNLOAD_URL_ID')
-MAILPARSER_DOWNLOAD_BASE_URL = "https://files.mailparser.io/d/rqzljtvt"
+MAILPARSER_DOWNLOAD_BASE_URL = "https://files.mailparser.io/d/t"
 
 # Telegram Bot 推送配置
 TG_BOT_TOKEN = os.getenv('TG_BOT_TOKEN')
