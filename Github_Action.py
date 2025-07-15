@@ -8,21 +8,21 @@ euserv 自动续期脚本
 * 增加登录失败重试机制
 * 日志信息格式化
 """
-import导入操作系统模块
-import导入正则表达式模块
-import导入json
-import导入时间
-import导入 base64
-import导入requests
-from从bs4导入BeautifulSoupimport BeautifulSoup
+import os
+import re
+import json
+import time
+import base64
+import requests
+from bs4 import BeautifulSoup
 
 # 账户信息：用户名和密码
-USERNAME = os.getenv('EUSERV_USERNAME')  # 填写用户名或邮箱getenv('EUSERV_USERNAME')  # 填写用户名或邮箱
-PASSWORD = os.getenv('EUSERV_PASSWORD')  # 填写密码getenv('EUSERV_PASSWORD')  # 填写密码
+USERNAME = os.getenv('EUSERV_USERNAME')  # 填写用户名或邮箱
+PASSWORD = os.getenv('EUSERV_PASSWORD')  # 填写密码
 
 # TrueCaptcha API 配置
-TRUECAPTCHA_USERID = os.getenv('TRUECAPTCHA_USERID')getenv('TRUECAPTCHA_USERID')
-TRUECAPTCHA_APIKEY = os.getenv('TRUECAPTCHA_APIKEY')getenv('TRUECAPTCHA_APIKEY')
+TRUECAPTCHA_USERID = os.getenv('TRUECAPTCHA_USERID')
+TRUECAPTCHA_APIKEY = os.getenv('TRUECAPTCHA_APIKEY')
 
 # Mailparser 配置
 MAILPARSER_DOWNLOAD_URL_ID = os.getenv('MAILPARSER_DOWNLOAD_URL_ID')
