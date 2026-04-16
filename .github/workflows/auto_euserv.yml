@@ -5,6 +5,9 @@ on:
     - cron: '32 0 16 * *'  # 每月16日 UTC 时间 0:32 运行
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   run-script:
     runs-on: ubuntu-latest
